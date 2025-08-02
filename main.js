@@ -1,17 +1,19 @@
+let intervalId;
 
 function startDisplayingWords()
 {
+  clearInterval(intervalId);
   let wordsPerMinute = Number(document.getElementById("WPM").value);
   let numberOfWords = Number(document.getElementById("NW").value);
 
-  let text = document.getElementById("textInput").value.split(" ");
+  let word = 0;
+  let text = document.getElementById("textInput").value.split(" ").filter((word) => word.length > 0);
   let wordCount = text.length;
   if (numberOfWords > wordCount)
     numberOfWords = 1;
-  let word = 0;
   let textToBeRendered = "";
 
-  let intervalId = setInterval(() => {
+  intervalId = setInterval(() => {
 
     textToBeRendered = "";
     for (let i = word; word - i < numberOfWords && word < wordCount;) {
@@ -19,7 +21,9 @@ function startDisplayingWords()
       word++;
     }
     document.getElementById("readingWords").innerText = textToBeRendered;
-    if (word >= wordCount) clearInterval(intervalId);
+    if (word >= wordCount) {
+      clearInterval(intervalId);
+    }
   }, 1000.0 * 60 / wordsPerMinute * numberOfWords);
 }
 
