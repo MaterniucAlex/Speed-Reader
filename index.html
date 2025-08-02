@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Speed Reader</title>
+    <link href="style.css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" sizes="64x64" href="./assets/favicon.svg">
+  </head>
+  <body>
+
+    <section class="mainSection">
+      <textarea type="text" name="textInput" value="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat." id="textInput" spellcheck="false"></textarea><br>
+      <section class="optionsSection">
+        <h4>Words Per Minute</h4>
+        <input type="text" inputmode="numeric" name="wordsPerMinute" value="300" id="WPM" size='2' maxlength='3'>
+        <input type="text" inputmode="numeric" name="numberOfWords" value="1" id="NW" size='2' maxlength='1'><br>
+        <h4>Words On Display</h4>
+      </section>
+      <button type="submit" id="submitButton">Read</button>
+    </section>
+
+    <section class="mainSection">
+      <h3 id="readingWords">Word</h3>
+      <button type="reset" id="resetButton">Reset</button>
+    </section>
+
+    <script src="./main.js"></script>
+  </body>
+</html>
