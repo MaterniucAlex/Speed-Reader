@@ -29,7 +29,7 @@ function startDisplayingWords()
 
 document.getElementById("submitButton").onclick = () => {
 
-  window.scrollTo(0, window.innerHeight);
+  window.scrollTo(0, document.body.scrollHeight);
   startDisplayingWords();
 
 };
