@@ -7,7 +7,7 @@ function startDisplayingWords()
   let numberOfWords = Number(document.getElementById("NW").value);
 
   let word = 0;
-  let text = document.getElementById("textInput").value.split(" ").filter((word) => word.length > 0);
+  let text = document.getElementById("textInput").value.split(/\s+/).filter((word) => word.length > 0);
   let wordCount = text.length;
   if (numberOfWords > wordCount)
     numberOfWords = 1;

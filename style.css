@@ -30,6 +30,7 @@ body {
   align-items: center;
   gap: 0.5em;
   width: min(35vw, 720px);
+  position: relative;
 }
 
 .optionsSection {
@@ -72,6 +73,7 @@ textarea::-webkit-scrollbar {
   border-radius: 1em;
   border: 6px solid var(--grayColor);
   resize: none;
+  background-color: #181818;
 }
 
 #textInput:focus {
@@ -96,5 +98,6 @@ button:active {
 }
 
 #resetButton {
-  transform: translate(0, 10vw);
+  position: absolute;
+  bottom: 20vw;
 }
