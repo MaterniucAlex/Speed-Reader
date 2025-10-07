@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="../style.css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" sizes="64x64" href="../assets/magnifier.svg">
+
+    <title>Precision Typer</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  </head>
+  <body>
+
+    <section>
+      <input id="input" autofocus>
+      <div class="column" style="height:30vh;">
+        <h2 id="whatToType">H</h2>
+        <div class="inline">
+          <h6 id="streak"      class="unintrusive">Streak: 0</h2>
+          <h6 id="averageTime" class="unintrusive">Average: 0.00s</h2>
+        </div>
+      </div>
+      <div class="inline">
+        <button class="blur" id="Letters">Letters</button>
+        <button class="blur" id="Words"><s>Words</s></button>
+        <button class="blur" id="Sentences"><s>Sentences</s></button>
+      </div>
+    </section>
+
+    <div id="navButtons">
+      <button id="menuButton"><img src="../assets/menu.svg" alt="Menu"></button>
+      <ul class="pagesList">
+        <li class="tooltip">
+          <button>
+            <a href="../SpeedReader/speedReader.html"> <img src="../assets/lightning.svg" alt="Speed"></a>
+          </button> 
+          <span class="tooltiptext">Speed Reading</span> 
+        </li>
+        <li class="tooltip">
+          <button>
+            <a href="../PrecisonTyper/precisionTyper.html"> <img src="../assets/magnifier.svg" alt="Preci"></a>
+          </button> 
+          <span class="tooltiptext">Precision Typer</span> 
+        </li>
+      </ul>
+    </div>
+
+    <script src="./precisionTyper.js"></script>
+  </body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Speed Reader</title>
+    <link href="../style.css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" sizes="64x64" href="../assets/lightning.svg">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <section>
+      <textarea type="text" name="textInput" id="textInput" spellcheck="false" class="pageElement">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+      </textarea><br>
+      <div class="inline">
+        <h6>Words Per Minute</h4>
+        <input type="text" inputmode="numeric" name="wordsPerMinute" value="300" id="WPM" size='2' maxlength='3'>
+        <input type="text" inputmode="numeric" name="wordsOnDisplay" value="1"   id="WOD" size='2' maxlength='1'><br>
+        <h6>Words On Display</h4>
+      </div>
+      <button type="submit" id="readButton">Read</button>
+    </section>
+
+    <section>
+      <h3 id="readingWords">Speed Readers</h3>
+      <button type="reset" id="resetButton">Reset</button>
+    </section>
+
+    <div id="navButtons">
+      <button id="menuButton"><img src="../assets/menu.svg" alt="Menu"></button>
+      <ul class="pagesList">
+        <li class="tooltip">
+          <button>
+            <a href="../SpeedReader/speedReader.html"> <img src="../assets/lightning.svg" alt="Speed"></a>
+          </button> 
+          <span class="tooltiptext">Speed Reading</span> 
+        </li>
+        <li class="tooltip">
+          <button>
+            <a href="../PrecisonTyper/precisionTyper.html"><img src="../assets/magnifier.svg" alt="Preci"></a>
+          </button> 
+          <span class="tooltiptext">Precision Typer</span> 
+        </li>
+      </ul>
+    </div>
+
+    <script src="../SpeedReader/speedReader.js"></script>
+  </body>
+</html>
