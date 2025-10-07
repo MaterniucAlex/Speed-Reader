@@ -140,7 +140,7 @@ function resumeChecks()
             streakShower.innerText = "Streak: " + currentStreak;
             timeAverageShower.innerText = "Average: " + timeAverage.toFixed(2) + 's';
 
-            if (input.value == header.innerText) //good input
+            if (input.value.toLowerCase() == header.innerText.toLowerCase()) //good input
             {
               header.style.color = "lime"
               currentStreak++;
